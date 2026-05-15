@@ -10,9 +10,7 @@ TeamFlow is a modern, premium task management application designed for teams to 
 
 ---
 
-## ✨ Key Features
-... (the rest of your content)
-
+![TeamFlow Banner](https://via.placeholder.com/1200x400/1e293b/ffffff?text=TeamFlow+Task+Manager)
 
 ## ✨ Key Features
 
@@ -57,3 +55,58 @@ TeamFlow is a modern, premium task management application designed for teams to 
    ```bash
    git clone https://github.com/tarunkumar575022/Team-Task-Manager.git
    cd Team-Task-Manager
+   ```
+
+2. **Server Setup**
+   ```bash
+   cd server
+   npm install
+   ```
+   Create a `.env` file in the `server` directory:
+   ```env
+   PORT=5000
+   MONGODB_URI=your_mongodb_connection_string
+   JWT_SECRET=your_super_secret_key
+   ```
+   Start the backend:
+   ```bash
+   npm run dev
+   ```
+
+3. **Client Setup**
+   ```bash
+   cd ../client
+   npm install
+   ```
+   Start the frontend:
+   ```bash
+   npm run dev
+   ```
+
+## 📂 Project Structure
+
+```text
+├── client/                # React Frontend (Vite)
+│   ├── src/
+│   │   ├── components/    # Reusable UI components
+│   │   ├── pages/         # Page-level components
+│   │   ├── utils/         # API helpers and utilities
+│   │   └── App.jsx        # Main application component
+├── server/                # Express Backend
+│   ├── models/            # Mongoose schemas
+│   ├── routes/            # API endpoints
+│   ├── middleware/        # Auth and validation middleware
+│   └── index.js           # Server entry point
+└── README.md              # Project documentation
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the ISC License.
+
+---
+Built with ❤️ by [Tarun Kumar](https://github.com/tarunkumar575022)
